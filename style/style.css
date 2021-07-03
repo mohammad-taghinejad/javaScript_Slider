@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'isans';
+    src: url('fonts/IRANSans-Bold.eot?#') format('eot'),
+        /* IE6–8 */ url('fonts/IRANSans-Bold.woff2') format('woff2'),
+        /* Chrome36+, Opera24+*/ url('fonts/IRANSans-Bold.woff') format('woff');
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'isans';
+    src: url('fonts/IRANSANSExpanded.eot?#') format('eot'),
+        /* IE6–8 */ url('fonts/IRANSANSExpanded.woff2') format('woff2'),
+        /* Chrome36+, Opera24+*/ url('fonts/IRANSANSExpanded.woff') format('woff');
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: normal;
+}
+
+body {
+    font-family: isans !important;
+    font-size: 14px !important;
+    background-image: linear-gradient(to right, #7c278c, #310c59);
+}
+
+#slider {
+    width: 60%;
+    position: relative;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.text {
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.prev, .next {
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    font-size: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: all 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    color: #d59420;
+}
+
+.prev {
+    left: 25px;
+}
+
+.next {
+    right: 25px;
+}
+
+.slide {
+    display: none;
+    animation: fade 1s;
+}
+
+.active {
+    display: block;
+}
+
+#dots {
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #d59420;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
